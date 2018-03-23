@@ -1,0 +1,28 @@
+{
+  "fonts": [
+    "../src/fonts/**/*"
+  ],
+  "svgSprite": {
+    "directories": [
+    ],
+    "fontAwesomeRawSVGs": [
+      "light/bars"
+    ]
+  },
+  "browserSync": {
+    "port": 8001,
+    "proxy": "http://pricefixer.test",
+    "ui": false
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
