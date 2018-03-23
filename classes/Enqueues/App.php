@@ -2,6 +2,8 @@
 
 namespace Decouple\Enqueues;
 
+use const Decouple\URI;
+
 class App
 {
 
@@ -13,10 +15,10 @@ class App
 
     public function register()
     {
-        $js_locator = 'dist/scripts/index.js';
-        wp_register_script(
+        $js_locator = '/dist/scripts/index.js';
+        wp_enqueue_script(
             'App',
-            $js_locator,
+            URI . $js_locator,
             false,
             $js_locator,
             true

@@ -2,11 +2,11 @@
 
 namespace Decouple;
 
-define(__NAMESPACE__ . '\PATH', plugin_dir_path(__FILE__));
-define(__NAMESPACE__ . '\URI', plugin_dir_url(__FILE__));
+define(__NAMESPACE__ . '\PATH', get_template_directory(__FILE__));
+define(__NAMESPACE__ . '\URI', get_template_directory_uri(__FILE__));
 
 require_once 'lib/autoload.php';
 
-add_action('plugins_loaded', function () {
+add_action('after_setup_theme', function () {
     Enqueues\App::init();
 });

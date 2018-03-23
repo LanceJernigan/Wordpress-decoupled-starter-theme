@@ -5,7 +5,7 @@ namespace Decouple;
 spl_autoload_register(function ($class) {
 
     $prefix   = __NAMESPACE__; // change this to your root namespace
-    $base_dir = PATH . 'classes'; // make sure this is the directory with your classes
+    $base_dir = PATH . '/classes'; // make sure this is the directory with your classes
     $len      = strlen($prefix);
 
     if (strncmp($prefix, $class, $len) !== 0) {
