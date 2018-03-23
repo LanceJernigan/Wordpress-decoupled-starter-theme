@@ -1,6 +1,6 @@
 <?php
 
-namespace Pyxl\CT;
+namespace Decouple;
 
 define(__NAMESPACE__ . '\PATH', plugin_dir_path(__FILE__));
 define(__NAMESPACE__ . '\URI', plugin_dir_url(__FILE__));
