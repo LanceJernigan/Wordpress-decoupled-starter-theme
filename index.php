@@ -13,8 +13,6 @@ use const Decouple\PATH;
 get_header();
 
 Enqueues\App::addMount('app', PATH . '/dist/scripts/app.js');
-Enqueues\App::localize('navigation', [
-    'navigation' => wp_get_nav_menu_items('header'),
-]);
+Enqueues\App::localize('navigation', wp_get_nav_menu_items('header'));
 
 get_footer();
