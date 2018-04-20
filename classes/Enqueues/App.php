@@ -78,7 +78,7 @@ class App
     {
         wp_localize_script(
             'App',
-            'object_name',
+            'app',
             self::getLocalizedState()
         );
     }
